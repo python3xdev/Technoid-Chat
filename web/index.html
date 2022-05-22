@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="icon.png">
+        <title>Technoid Room - by python3.x_dev</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div id="contextMenu" class="context-menu" style="display:none">
+            <ul>
+                <li><a onclick="copySelection();" href="javascript:void(0);">Copy</a></li>
+                <li><a onclick="pasteFromClipboard();" href="javascript:void(0);">Paste</a></li>
+            </ul>
+        </div>
+
+        <div class="enter-username-wrapper">
+            <div class="enter-username-content">
+                <h1 class="center-inner-content">Username Creation</h1>
+                <form onsubmit="return false" id="username-form" class="username-form">
+                    <input type="text" id="username" placeholder="e.g. John123" name="username" maxlength="21"><br><br>
+                    <button type="submit" value="send" class="username-next-btn" onclick="set_username()">
+                        NEXT <i class="fas fa-arrow-alt-circle-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="title_wrapper">
+            <h1 class="center-inner-content">Technoid Chat Room</h1>
+        </div>
+        <div class="box_on_background chat_wrapper">
+            <ul id="chatbox" class="chatbox">
+
+            </ul>
+            <form onsubmit="return false" id="send-message" class="message-form">
+                <input placeholder="Say Something…" id="message" maxlength="950">
+                <button type="submit" value="send" class="send-msg-btn">
+                    <i class="far fa-paper-plane"></i> SEND
+                </button>
+            </form>
+        </div>
+        <div class="footer">
+            <p>Made with ♥ by python3.x_dev</p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/18473207e7.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../eel.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>

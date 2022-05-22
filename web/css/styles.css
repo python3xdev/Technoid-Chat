@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Share Tech Mono';
+    src:
+        url('../fonts/ShareTechMono-Regular.woff2') format('woff2'),
+        url('../fonts/ShareTechMono-Regular.woff') format('woff'),
+        url('../fonts/ShareTechMono-Regular.ttf') format('truetype');
+}
+
+:root {
+    --main-bg-color: #121313;
+    --item-bg-color: #1D1D1D;
+    --item-on-item-bg-color: #121313;
+    --text-color: #00FF41;
+}
+
+::selection {
+  background: #008221;
+  color: #00FF41;
+}
+
+body{
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0.5rem 1rem 1rem 1rem;
+    color: var(--text-color);
+    font-family: 'Share Tech Mono', monospace;
+    height: 95vh;
+    overflow: hidden;
+}
+
+/* https://www.geeksforgeeks.org/how-to-add-a-custom-right-click-menu-to-a-webpage/ */
+.context-menu {
+	z-index: 2;
+	position: absolute;
+	text-align: center;
+	background: var(--item-bg-color);
+	border: 1px solid var(--text-color);
+}
+
+.context-menu ul {
+	padding: 0px;
+	margin: 0px;
+	min-width: 150px;
+	list-style: none;
+}
+
+.context-menu ul li {
+	padding-bottom: 0px;
+	padding-top: 0px;
+	border: 1px solid var(--text-color);
+}
+
+.context-menu ul li a {
+	display: inline-block;
+	width: 100%;
+	line-height: 175%;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.context-menu ul li:hover {
+	background: #008221;
+}
+
+.enter-username-wrapper {
+	background-color: var(--item-bg-color);
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.hide-username-form {
+	transition: 1.75s;
+	transform: translateX(100%);
+}
+
+.enter-username-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.username-form {
+	margin: 1rem 0 0;
+    width: 100%;
+}
+
+.username-form input#username {
+    background-color: var(--item-on-item-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    width: calc(100% - 130px);
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    font-size: 1.15rem;
+}
+
+.username-form input#username:focus {
+	outline: none;
+    border-color: #006b1b;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 10px var(--text-color);
+}
+
+.username-next-btn {
+	width: 100px;
+	height: 2.5rem;
+	float: right;
+	background-color: var(--item-on-item-bg-color);
+	color: var(--text-color);
+	font-size: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    border: 1px solid var(--text-color);
+    transform: translateY(-3.7rem);
+}
+
+.username-next-btn:active {
+	transform: translateY(-3.45rem);
+}
+
+.username-next-btn:focus {
+	outline: none;
+}
+
+.box_on_background {
+    background-color: var(--item-bg-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.center-inner-content {
+    text-align: center;
+}
+
+.title_wrapper {
+
+}
+
+.chat_wrapper {
+	height: 80%;
+}
+
+.chatbox {
+    background-color: var(--item-on-item-bg-color);
+    margin: 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    list-style: none;
+    height: calc(100% - 5.75rem);
+    overflow: auto;
+}
+
+.chatbox::-webkit-scrollbar-track {
+	/*border: 1px solid var(--text-color);*/
+	background-color: var(--item-on-item-bg-color);
+}
+
+.chatbox::-webkit-scrollbar {
+	width: 6px;
+	background-color: var(--item-on-item-bg-color);
+}
+
+.chatbox::-webkit-scrollbar-thumb {
+	background-color: var(--text-color);
+}
+
+.chatbox li {
+    background-color: var(--item-bg-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0.3rem;
+}
+
+.msg-bubble-username {
+    margin: 0;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.msg-bubble-text {
+    margin: 0.75rem 0 0 1.5rem;
+}
+
+.msg-bubble-date {
+	transform: translateY(-0.75rem);
+	display: inline-block;
+	float: right;
+}
+
+.message-form {
+	margin: 1rem 0 0;
+    width: 100%;
+}
+
+.message-form input#message {
+    background-color: var(--item-on-item-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    width: calc(100% - 130px);
+    height: 2.5rem;
+    padding: 0 0.75rem;
+    font-size: 1.15rem;
+}
+
+.message-form input#message:focus {
+	outline: none;
+    border-color: #006b1b;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 10px var(--text-color);
+}
+
+.send-msg-btn {
+	width: 100px;
+	height: 2.5rem;
+	float: right;
+	background-color: var(--item-on-item-bg-color);
+	color: var(--text-color);
+	font-size: 1rem;
+    font-family: 'Share Tech Mono', monospace;
+    border: 1px solid var(--text-color);
+}
+
+.send-msg-btn:active {
+	transform: translateY(0.25rem);
+}
+
+.send-msg-btn:focus {
+	outline: none;
+}
+
+.footer {
+	text-align: center;
+}
