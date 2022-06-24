@@ -11,9 +11,8 @@ Anyone who downloads this project and uses it (or modifies the code) must includ
 
 Images Of The Program:
 
-![](C:\Users\User\Downloads\Screenshot 2022-06-24 215136.png)
+![Screenshot 2022-06-24 215136](https://user-images.githubusercontent.com/77379766/175649035-f76a7b48-ccfe-40fc-a321-b6065cb61b60.png)
 
-![](C:\Users\User\Downloads\Screenshot 2022-06-24 215246.png)
+![Screenshot 2022-06-24 215246](https://user-images.githubusercontent.com/77379766/175649076-9abd817d-d1c6-48d1-9397-6f3ff094e420.png)
 
-![Screenshot 2022-06-24 215618](C:\Users\User\Downloads\Screenshot 2022-06-24 215618.png)
-
+![Screenshot 2022-06-24 215618](https://user-images.githubusercontent.com/77379766/175649085-17acf6a7-5df2-44b4-a426-f8ea767acd18.png)
